@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-.headeer-line {}
-
-
 .container {
     max-width: 1300px;
     margin: 0 auto;
@@ -24,7 +21,8 @@
 .header-menu {
     padding: 10px;
     background-color: white;
-     display: inline-block;
+    display: inline-block;
+
 }
 
 .header-menu ul {
@@ -56,11 +54,27 @@ a::after {
     left: 28px;
     bottom: 1px;
     transition: 0.5s;
+    
 }
 
 a:hover ::after {
     width: 30px;
 }
+
+
+.home-dropdown {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+
+.home-dropdown li {
+    display: block;
+    
+}
+
+
 
 .home-dropdown li a {
     color: white;
@@ -70,17 +84,6 @@ a:hover ::after {
 }
 
 
-ul li ul.home-dropdown li {
-    display: block;
-    
-}
-
-
-ul li ul.home-dropdown {
-    width: 100%;
-    position: absolute;
-    display: none;
-}
 
 ul li:hover >ul.home-dropdown {
     display: block;
