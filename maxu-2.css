@@ -5,7 +5,6 @@
 }
 
 .headeer-line {
-    background-color:whitesmoke;
     width: 100%;
    
 }
@@ -53,6 +52,24 @@
     transition: 0.5s;
     border-radius: 5px;
 }
+
+
+.header-menu ul li a::after {
+    content: "";
+    position: absolute;
+    background-color:blue;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.6s;
+}
+
+
+.header-menu ul li a:hover::after {
+    width: 100%;
+}
+
 
 .header-menu ul li a:hover {
     background-color: #12a9ff;
@@ -156,4 +173,104 @@
     border-radius: 5px;
     margin-left: 4px;
     display: inline-block;
+}
+
+/* pain-section start */
+
+.body-part {
+    margin-top: -90px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.body-part h1 {
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*pain-section end */
+
+/*rowsection start */
+
+
+.box {
+    background-image: url(./f-bg.png);
+    background-repeat: no-repeat;
+    padding:60px 40px;
+    display: flex;
+    width: 33.33%;
+}
+
+
+.box-text {
+    margin: 10px;
+    width: 70%;
+    text-align: center;
+    
+}
+
+.box-f1 img{
+    margin-left: 50px;
+}
+
+.box-f2 img{
+    margin-left: 50px;
+}
+
+.box-f3 img{
+    margin-left: 50px;
+}
+.box1 {
+
+}
+
+.box2{
+
+}
+
+.box3{
+    float: right;
+}
+/*rowsection end*/
+
+
+.tummy-section {
+    background-image: url(./s-bg.png);
+    height: 600px;
+    margin: 50px;
+    padding: 10px;
+}
+
+.left-side {
+    float: left;
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 9%;
+
+}
+
+
+.left-side span {
+    margin:40px;
+    margin-left: -18px;
+    display: inline-block;
+}
+
+
+.left-side span a{
+    text-decoration: none;
+    background-color: #12a9ff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+.right-side img{
+    float: right;
+    padding: 80px 20px;
 }
